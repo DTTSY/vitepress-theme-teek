@@ -28,7 +28,7 @@ html[code-block="#{$namespace}"] {
     transition: height getCssVar("transition-duration") ease-in-out;
     overflow: hidden;
 
-    .vp-code {
+    .shiki {
       padding-top: getCssVar("code-block-fold-height");
     }
 
