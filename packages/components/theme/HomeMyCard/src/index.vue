@@ -45,6 +45,8 @@ const isSrc = computed(() => {
       :style="avatarBgStyle"
     />
 
+    <slot name="teek-home-card-my-avatar-before" />
+
     <div :class="`${ns.e('avatar')} ${bloggerConfig.shape} flx-center`">
       <div>
         <TkAvatar
@@ -81,6 +83,8 @@ const isSrc = computed(() => {
         />
       </div>
     </div>
+
+    <slot name="teek-home-card-my-avatar-after" />
 
     <div
       v-if="socialConfig.length"

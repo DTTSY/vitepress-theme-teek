@@ -94,7 +94,11 @@ onMounted(() => {
 
           <div ref="cardListInstance">
             <slot v-if="componentMap[item]?.show" :name="componentMap[item]?.slot">
-              <component :is="componentMap[item]?.el" v-bind="componentMap[item]?.props" />
+              <component :is="componentMap[item]?.el" v-bind="componentMap[item]?.props">
+                <template v-for="(_, name) in $slots" :key="name" #[name]="scope">
+                  <slot :name="name" v-bind="scope" />
+                </template>
+              </component>
             </slot>
           </div>
 

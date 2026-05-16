@@ -1,6 +1,6 @@
 <script setup lang="ts" name="CommentTwikoo">
 import type { CommentProvider } from "@teek/config";
-import { ref, onMounted, inject } from "vue";
+import { onMounted, inject, useTemplateRef } from "vue";
 import { isClient } from "@teek/helper";
 import { useNamespace, useVpRouter } from "@teek/composables";
 import { useTeekConfig } from "@teek/components/theme/ConfigProvider";
@@ -37,11 +37,13 @@ const initTwikoo = () => {
   else if ((window as any).twikoo) (window as any).twikoo.init({ ...twikooOption, el: "#twikoo" });
 };
 
-const twikooJs = ref<HTMLScriptElement | null>(null);
+const twikooJs = useTemplateRef<HTMLScriptElement | null>("twikooJs");
 
 const initJs = () => {
   const t = twikooJs.value;
+
   if (t) t.onload = initTwikoo;
+  else setTimeout(initTwikoo, timeout);
 };
 
 const reloadTwikoo = (to: string) => {
