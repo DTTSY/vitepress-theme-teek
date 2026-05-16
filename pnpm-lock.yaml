@@ -61,8 +61,8 @@ catalogs:
       specifier: ^1.2.1
       version: 1.2.1
     vitepress-plugin-sidebar-resolve:
-      specifier: ^1.2.2
-      version: 1.2.2
+      specifier: ^1.2.3
+      version: 1.2.3
   vue:
     '@vue/compiler-dom':
       specifier: ^3.5.32
@@ -161,8 +161,8 @@ importers:
         specifier: ^6.0.2
         version: 6.0.2
       unbuild:
-        specifier: 3.6.1
-        version: 3.6.1(sass@1.99.0)(typescript@6.0.2)(vue-tsc@3.2.6(typescript@6.0.2))(vue@3.5.32(typescript@6.0.2))
+        specifier: 3.4.2
+        version: 3.4.2(sass@1.99.0)(typescript@6.0.2)(vue-tsc@3.2.6(typescript@6.0.2))(vue@3.5.32(typescript@6.0.2))
       vue:
         specifier: catalog:vue
         version: 3.5.32(typescript@6.0.2)
@@ -310,7 +310,7 @@ importers:
         version: 1.2.1(vitepress@1.6.4(@algolia/client-search@5.50.1)(@types/node@25.5.2)(postcss@8.5.8)(sass@1.99.0)(search-insights@2.17.3)(typescript@6.0.2))
       vitepress-plugin-sidebar-resolve:
         specifier: 'catalog:'
-        version: 1.2.2(vitepress@1.6.4(@algolia/client-search@5.50.1)(@types/node@25.5.2)(postcss@8.5.8)(sass@1.99.0)(search-insights@2.17.3)(typescript@6.0.2))
+        version: 1.2.3(vitepress@1.6.4(@algolia/client-search@5.50.1)(@types/node@25.5.2)(postcss@8.5.8)(sass@1.99.0)(search-insights@2.17.3)(typescript@6.0.2))
     devDependencies:
       '@types/markdown-it':
         specifier: 'catalog:'
@@ -2942,9 +2942,6 @@ packages:
     resolution: {integrity: sha512-6jvvn/12IC4quLBL1KNokxC7wWTvYncaVUYSoxWw7YykPLuRrnv4qdHcSOywOI5RpkOVGeQRtWM8/q+G6W6qfQ==}
     engines: {node: '>= 8'}
 
-  fix-dts-default-cjs-exports@1.0.1:
-    resolution: {integrity: sha512-pVIECanWFC61Hzl2+oOCtoJ3F17kglZC/6N94eRWycFgBH35hHx0Li604ZIzhseh97mf2p0cv7vVrOZGoqhlEg==}
-
   flat-cache@4.0.1:
     resolution: {integrity: sha512-f7ccFPK3SXFHpx15UIGyRJ/FJQctuKZ0zVuN3frBo4HnK3cay9VEW0R6yPYFHC0AgqhukPzKjq22t5DmAyqGyw==}
     engines: {node: '>=16'}
@@ -4334,6 +4331,10 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
+  pretty-bytes@6.1.1:
+    resolution: {integrity: sha512-mQUvGU6aUFQ+rNvTIAcZuWGRT9a6f6Yrg9bHs4ImKF+HZCEK+plBvnAZYSIQztknZF2qnzNtr6F8s0+IuptdlQ==}
+    engines: {node: ^14.13.1 || >=16.0.0}
+
   pretty-bytes@7.1.0:
     resolution: {integrity: sha512-nODzvTiYVRGRqAOvE84Vk5JDPyyxsVk0/fbA/bq7RqlnhksGpset09XTxbpvLTIjoaF7K8Z8DG8yHtKGTPSYRw==}
     engines: {node: '>=20'}
@@ -4870,11 +4871,11 @@ packages:
     engines: {node: '>=0.8.0'}
     hasBin: true
 
-  unbuild@3.6.1:
-    resolution: {integrity: sha512-+U5CdtrdjfWkZhuO4N9l5UhyiccoeMEXIc2Lbs30Haxb+tRwB3VwB8AoZRxlAzORXunenSo+j6lh45jx+xkKgg==}
+  unbuild@3.4.2:
+    resolution: {integrity: sha512-bp+xhJ+MvxTDp/gcmzWf/e9IUQ12zFKz42VIMEtJo9GTrbkcAfq+rTcN1GSIr9ZyOEfdlsYdK85wguPHZ97YOQ==}
     hasBin: true
     peerDependencies:
-      typescript: ^5.9.2
+      typescript: ^5.7.3
     peerDependenciesMeta:
       typescript:
         optional: true
@@ -5046,8 +5047,8 @@ packages:
     peerDependencies:
       vitepress: ^1.6.3
 
-  vitepress-plugin-sidebar-resolve@1.2.2:
-    resolution: {integrity: sha512-a+IPibwC/MayEQE5MAMFmh5DDsf0G0asj2EWR9bcyIpYUNYGmP+fuzcZhaUlKsozXCc8AN2JI+NNdAnzvH+tPQ==}
+  vitepress-plugin-sidebar-resolve@1.2.3:
+    resolution: {integrity: sha512-uqeQUVVTRbJAPEKClL4aeGgOlpl75rQzuKjw1fpzN9X2Rv0nDuOu5U3GEKdqoY4vvMHnU+5DVvZG4bhQMYDwTw==}
     peerDependencies:
       vitepress: ^1.6.4
 
@@ -7697,12 +7698,6 @@ snapshots:
       micromatch: 4.0.8
       resolve-dir: 1.0.1
 
-  fix-dts-default-cjs-exports@1.0.1:
-    dependencies:
-      magic-string: 0.30.21
-      mlly: 1.8.2
-      rollup: 4.60.1
-
   flat-cache@4.0.1:
     dependencies:
       flatted: 3.4.2
@@ -9132,6 +9127,8 @@ snapshots:
 
   prettier@3.8.1: {}
 
+  pretty-bytes@6.1.1: {}
+
   pretty-bytes@7.1.0: {}
 
   process-nextick-args@2.0.1: {}
@@ -9699,7 +9696,7 @@ snapshots:
   uglify-js@3.19.3:
     optional: true
 
-  unbuild@3.6.1(sass@1.99.0)(typescript@6.0.2)(vue-tsc@3.2.6(typescript@6.0.2))(vue@3.5.32(typescript@6.0.2)):
+  unbuild@3.4.2(sass@1.99.0)(typescript@6.0.2)(vue-tsc@3.2.6(typescript@6.0.2))(vue@3.5.32(typescript@6.0.2)):
     dependencies:
       '@rollup/plugin-alias': 5.1.1(rollup@4.60.1)
       '@rollup/plugin-commonjs': 28.0.9(rollup@4.60.1)
@@ -9711,7 +9708,6 @@ snapshots:
       consola: 3.4.2
       defu: 6.1.6
       esbuild: 0.25.12
-      fix-dts-default-cjs-exports: 1.0.1
       hookable: 5.5.3
       jiti: 2.6.1
       magic-string: 0.30.21
@@ -9719,7 +9715,7 @@ snapshots:
       mlly: 1.8.2
       pathe: 2.0.3
       pkg-types: 2.3.0
-      pretty-bytes: 7.1.0
+      pretty-bytes: 6.1.1
       rollup: 4.60.1
       rollup-plugin-dts: 6.4.1(rollup@4.60.1)(typescript@6.0.2)
       scule: 1.3.0
@@ -9915,7 +9911,7 @@ snapshots:
       picocolors: 1.1.1
       vitepress: 1.6.4(@algolia/client-search@5.50.1)(@types/node@25.5.2)(postcss@8.5.8)(sass@1.99.0)(search-insights@2.17.3)(typescript@6.0.2)
 
-  vitepress-plugin-sidebar-resolve@1.2.2(vitepress@1.6.4(@algolia/client-search@5.50.1)(@types/node@25.5.2)(postcss@8.5.8)(sass@1.99.0)(search-insights@2.17.3)(typescript@6.0.2)):
+  vitepress-plugin-sidebar-resolve@1.2.3(vitepress@1.6.4(@algolia/client-search@5.50.1)(@types/node@25.5.2)(postcss@8.5.8)(sass@1.99.0)(search-insights@2.17.3)(typescript@6.0.2)):
     dependencies:
       gray-matter: 4.0.3
       picocolors: 1.1.1

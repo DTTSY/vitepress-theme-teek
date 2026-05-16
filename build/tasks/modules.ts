@@ -54,7 +54,7 @@ const buildModules = async () => {
             }
 
             // 在 cssResolver 里对 content 使用了 JSON.stringify，因此这里需要转换为 JSON
-            if (filePath.includes("style/index") || filePath.includes("style/css")) code = JSON.parse(content);
+            if (filePath.includes("/style/index") || filePath.includes("/style/css")) code = JSON.parse(content);
 
             return { filePath: tempPath, content: code };
           },

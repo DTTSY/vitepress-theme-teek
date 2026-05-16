@@ -1,4 +1,4 @@
-import type { TitleTagProps } from "@teek/components/common/TitleTag/src/titleTag";
+import type { TitleTagProps } from "@teek/components/common/title-tag/src/title-tag";
 
 export interface Post {
   /**
